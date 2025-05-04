@@ -13,7 +13,7 @@ This project simulates a real-world **Security Operations Center (SOC)** by crea
 
 | Component           | Description                                  |
 |---------------------|----------------------------------------------|
-| Windows Server 2019 | Domain Controller (AD DS, DNS, DHCP)         |
+| Windows Server 2022 | Domain Controller (AD DS, DNS, DHCP)         |
 | Windows 10 Hosts    | Two endpoint machines joined to the domain   |
 | Ubuntu 22.04 Server | Splunk Enterprise installed for log analysis |
 | Splunk Forwarders   | Installed on Windows hosts for log shipping  |
