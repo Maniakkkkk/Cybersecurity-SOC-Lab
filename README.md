@@ -24,7 +24,7 @@ This project simulates a real-world **Security Operations Center (SOC)** by crea
 
 ### ✅ Active Directory Setup
 - Installed and configured AD DS, DNS, and DHCP
-- Created domain: `corp.local`
+- Created domain: `ejon.local`
 - Added users and organizational units
 
 ### ✅ Domain Join
@@ -43,17 +43,6 @@ This project simulates a real-world **Security Operations Center (SOC)** by crea
 
 ---
 
-## 📊 Dashboards & Alerts
-
-| Feature                | Description                                      |
-|------------------------|--------------------------------------------------|
-| Failed Login Attempts  | Detects EventCode 4625 and alerts on thresholds |
-| New User Creation      | Detects EventCode 4720 from domain controller   |
-| Admin Group Changes    | Monitors Domain Admins membership changes       |
-| Logon Type Analysis    | Highlights RDP and remote login events          |
-
----
-
 ## 🧠 Key Takeaways
 
 - Built a fully functional SOC lab from scratch
@@ -64,5 +53,7 @@ This project simulates a real-world **Security Operations Center (SOC)** by crea
 ---
 
 ## 📁 Project Structure
+
+
 
 
