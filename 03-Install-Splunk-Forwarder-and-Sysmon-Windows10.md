@@ -1,5 +1,4 @@
-**# 🖥️ Step 1: Install Splunk Forwarder, Sysmon & Configure inputs.conf [local]**
-
+# 🖥️ Step 3: Installing Splunk Forwarder and Sysmon with Olaf configuration and configuring input.conf to local
 🧠 Objective
 
 Download and install Splunk Universal Forwarder and Sysmon on Windows 10 hosts, apply Olaf’s Sysmon configuration for enhanced logging, then create an inputs.conf file under the Splunk Forwarder local directory to forward Windows and Sysmon event logs to your SOC.
