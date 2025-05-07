@@ -6,15 +6,6 @@ Download and install Splunk Universal Forwarder and Sysmon on Windows 10 hosts, 
 
 ---
 
-## 🧰 Requirements
-
-* Windows 10 Pro VM joined to `ejon.local` domain
-* Administrative privileges on the Windows 10 host
-* Splunk Enterprise server accessible at `192.168.10.10:9997`
-* Internet access to download installers
-
----
-
 ## ⚙️ 1. Download & Install Splunk Universal Forwarder
 
 1. On the Windows 10 VM, browse to Splunk UF download page:
