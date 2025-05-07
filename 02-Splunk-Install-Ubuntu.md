@@ -1,11 +1,4 @@
-
-
-
-📘 02-Splunk-Install-Ubuntu.md
-markdown
-Copy
-Edit
-# 🐧 Step 2: Installing Splunk Enterprise on Ubuntu Server
+# 🖥️ Step 1: Installing Splunk Enterprise on Ubuntu Server
 
 ## 🧠 Objective
 Install Splunk Enterprise on a dedicated Ubuntu Server (22.04+) inside VirtualBox, configure static IP, mount shared folders, and enable Splunk for boot-time startup.
