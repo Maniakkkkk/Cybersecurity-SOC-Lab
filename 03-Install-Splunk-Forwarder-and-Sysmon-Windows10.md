@@ -1,4 +1,4 @@
-🔄 Step 3: Install Splunk Forwarder, Sysmon & Configure inputs.conf [local]
+**# 🖥️ Step 1: Install Splunk Forwarder, Sysmon & Configure inputs.conf [local]**
 
 🧠 Objective
 
