@@ -52,7 +52,8 @@ This project simulates a real-world **Security Operations Center (SOC)** by crea
 
 ---
 
-Ejon Rexhepi, Kosovo
+**Ejon Rexhepi, _Republic of Kosovo _
+Security Operations | Cyber Threat Intelligence**
 
 
 
