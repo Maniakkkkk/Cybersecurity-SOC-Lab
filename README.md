@@ -51,10 +51,8 @@ This project simulates a real-world **Security Operations Center (SOC)** by crea
 - Developed dashboards and alerts for critical security events
 
 ---
-
-**Ejon Rexhepi, _Republic of Kosovo _
-Security Operations | Cyber Threat Intelligence**
-
+Ejon Rexhepi, Republic of Kosovo
+Security Operations | Cyber Threat Intelligence
 
 
 
