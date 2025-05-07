@@ -1,6 +1,3 @@
-Here's an enhanced version of your SOC lab project description with a focus on future improvements involving Snort for IDS and IPS:
-
----
 
 # EJON SOC Lab – Active Directory + Splunk Integration with IDS/IPS Focus
 
