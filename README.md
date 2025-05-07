@@ -52,7 +52,7 @@ This project simulates a real-world **Security Operations Center (SOC)** by crea
 
 ---
 
-## 📁 Project Structure
+Ejon Rexhepi, Kosovo
 
 
 
