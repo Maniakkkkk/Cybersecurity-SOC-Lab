@@ -48,7 +48,21 @@ This project simulates a real-world **Security Operations Center (SOC)** by crea
 - Built a fully functional SOC lab from scratch
 - Practiced integrating endpoint telemetry with Splunk
 - Gained hands-on experience analyzing Windows event logs
-- Developed dashboards and alerts for critical security events
+💡 Future Improvements
+
+Implement Intrusion Detection Systems (IDS): Integrate Suricata or Snort to detect network-based threats and forward alerts to Splunk.
+
+Add Host-based IPS: Deploy OSSEC or Wazuh agents on Windows and Linux hosts for real-time host intrusion prevention and file integrity monitoring.
+
+MITRE ATT&CK Automation: Automate mapping of alerts to MITRE tactics using Splunk Enterprise Security.
+
+SOAR Integration: Implement automated incident response workflows with Splunk SOAR or Phantom.
+
+Threat Intelligence Feeds: Add additional feeds (MISP, OTX) and automate blocking of malicious IPs via firewall scripts.
+
+Network Visualization: Use network traffic dashboards to visualize IDS alerts and correlate with Sysmon events.
+
+Performance Tuning: Optimize index retention, indexing rate, and forwarder performance for large-scale deployment.
 
 ---
 Ejon Rexhepi, Republic of Kosovo
