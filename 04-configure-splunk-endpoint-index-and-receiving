@@ -1,0 +1,76 @@
+# 🔄 Step 4: Configure Splunk Enterprise to Receive Forwarded Logs
+
+## 🧠 Objective
+
+Log in to the Splunk Web UI, create an `endpoint` index, and configure Splunk to listen on port **9997** to receive data from your Universal Forwarders.
+
+---
+
+## 🔧 1. Log in to Splunk Web
+
+1. Open a web browser and navigate to your Splunk server’s web interface:
+
+   ```text
+   http://192.168.10.10:8000
+   ```
+2. Enter the **Admin username and password** you set when first starting Splunk (during `./splunk start --accept-license`).
+3. Click **Sign In**.
+
+---
+
+## 📂 2. Create the `endpoint` Index
+
+1. In the top-right corner, click **Settings** (gear icon).
+2. Under **Data**, click **Indexes**.
+3. Click **New Index**.
+4. Configure the new index:
+
+   * **Index Name**: `endpoint`
+   * **App Context**: `search`
+   * Leave other settings at their defaults (you can adjust retention and size limits later).
+5. Click **Save**.
+
+---
+
+## 🌐 3. Configure Receiving Port (9997)
+
+1. In the Splunk Web UI, click **Settings** in the top-right.
+2. Under **Forwarding and receiving**, click **Receive data**.
+3. Click **New** under **TCP**.
+4. In the dialog that appears, enter:
+
+   * **Port**: `9997`
+   * **Source type**: leave as **automatic** (or specify if you prefer)
+   * **Index**: select `endpoint`
+5. Click **Save** to enable Splunk to listen on port 9997.
+
+---
+
+## 🔄 4. Verify the Receiver
+
+1. From the Splunk Web home screen, open the **Search & Reporting** app.
+
+2. Run the following search to confirm the TCP input is active:
+
+   ```spl
+   | rest /services/receivers/tcp-servers/local-inputs | search disabled=false | table port, index, sourcetype
+   ```
+
+3. Confirm you see an entry for port **9997** with `index = endpoint`.
+
+4. From the Splunk Web home screen, click the **Search & Reporting** app.
+
+5. Run the search to ensure the TCP input is listening:
+
+   ```spl
+   | rest /services/data/inputs/tcp | search name="9997" | table name, disabled, index
+   ```
+
+6. Confirm you see an entry for port **9997**, `disabled = false`, and `index = endpoint`.
+
+---
+
+## ✅ Outcome
+
+* Splunk Enterprise is now listening on port **9997** for Universal Forwarder traffic.
+* A dedicated index named **endpoint** is ready to store incoming Windows and Sysmon events.
